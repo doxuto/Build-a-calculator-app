@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Markazi+Text:wght@400;600;700&family=Tajawal:wght@300;400;500&display=swap');
+:root{
+  --light:#d9eff7;
+  --dark:#4741a6;
+  --primary:#f9ce69;
+  --secandary:#9bbbfc;
+  --lighter:#eee;
+  --darkness:#131a26;
+
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+
+  /* used to an element to make it non-selectable */
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+
+}
+body{
+  background-color: var(--light);
+
+}
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+
+}
+.heading{
+  background: -webkit-linear-gradient(var(--dark), var(--darkness));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 50px;
+  /* text-shadow: 1px 2px 2px rgba(0,0,0,0.6); */
+  /* font-family: 'Kalam', cursive; */
+
+}
+.cal{
+  width:100%;
+  max-width: 350px;
+  background-color: var(--dark) ;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 10px 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.screen{
+   width:100%;
+  max-width: 400px;
+  height: 100px;
+  padding: 16px; 
+  text-align: right;
+  background-color: var(--dark);
+  color: var(--lighter);
+  font-size: 2rem;
+  font-weight: 100;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: var(--secandary);
+  border-radius: 10px;
+
+ 
+  
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--secandary);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--darkness);
+  border-radius: 10px;
+
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary);
+}
+/* input{
+  width:100%;
+  max-width: 500px;
+  height: 100px;
+  background-color: var(--dark);
+  color: var(--lighter);
+  border: 0;
+  font-size: 2rem;
+  padding: 16px; 
+  text-align: right;
+  
+
+} */
+
+/* input:focus{
+  outline: 0;
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+
+} */
+
+.operator{
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  margin: 15px auto;
+  /* justify-content: center; */
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: var(--primary);
+  flex-basis: 21%;
+  
+}
+button:hover{
+  opacity: 0.9;
+}
+.span-2{
+  flex-basis: 45%;
+}
+.horizontal{
+  background-color: var(--secandary);
+}
+.number{
+  background-color: var(--light);
+}
